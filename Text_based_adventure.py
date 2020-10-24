@@ -17,6 +17,7 @@ vraag9 = False
 vraag10 = False
 vraag11 = False
 vraag12 = False
+vraag12b = False
 vraag13 = False
 vraag14 = False
 vraag15 = False
@@ -26,6 +27,18 @@ vraag18 = False
 vraag19 = False
 vraag20 = False
 vraag21 = False
+Einde1A = False
+Einde1B = False
+Einde2A = False
+Einde2B = False
+Einde3A = False
+Einde3B = False
+Einde4A = False
+Einde4B = False
+Einde5A = False
+Einde5B = False
+Einde6A = False
+Einde6B = False
 #-------------------------------------------------------------------------------------------
 #Introductie:
 print("\n--------------------------------------------------------------------------------")
@@ -194,7 +207,17 @@ def def12(antwoord):
                 return "D"
 
 
-
+#defenitie vraag13
+def def13(antwoord):
+        if antwoord.lower() == "a":
+                print("A13 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B13 werkt")
+                return "B"
+        else:
+                print("fout13 werkt")
+                return "D"
 #-------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------
 #Vraag 1 / input:
@@ -218,7 +241,16 @@ while vraag1 == True:
 #Vraag 2 / input:
 while vraag2 == True:
         print("vraag2 werkt")
-        break
+        antwoord2 = input("het is nog vroeg wat ga je doen met je laatste uren thuis?\nA:Ga slapen\nB:wacht")
+
+        if def1(antwoord1) == "A":
+                Einde6A = True
+                break
+        elif def1(antwoord1) == "B":
+                Einde6B = True
+                break
+        else:
+                continue
 
        
 #-------------------------------------------------------------------------------------------
@@ -347,7 +379,42 @@ while vraag8 == True:
         else:
                 continue
 
+#-------------------------------------------------------------------------------------------
+#Vraag 13 /input:
+while vraag13 == True:
 
+        os.system("cls")
+        print("vraag13 werkt")
+        antwoord8 = input ("Je waarscuwd de man mee naar verzet helpen met verzet\nA:Ja\nB:Nee\n:")
+
+        if def13(antwoord13) == "A":
+                Einde3A = True
+                break
+        elif def13(antwoord13) == "B":
+                Einde3B = True
+                break
+        else:
+                continue
+
+
+#-------------------------------------------------------------------------------------------
+#Vraag 14 /input:
+while vraag14 == True:
+
+        os.system("cls")
+        print("vraag14 werkt")
+        antwoord8 = input ("Je loopt snel door en besluit toch de bus te nemen\nA:haven\nB:grens\n:")
+
+        if def14(antwoord14) == "A":
+                vraag11 = True
+                break
+        elif def14(antwoord14) == "B":
+                vraag12 = True
+                break
+        else:
+                continue
+
+        
 #-------------------------------------------------------------------------------------------
 #Vraag 11 /input:
 while vraag11 == True:
@@ -372,6 +439,7 @@ while vraag11 == True:
                 continue
 
 
+#-------------------------------------------------------------------------------------------
 #Vraag 12 /input:
 while vraag12 == True:
 
@@ -386,10 +454,10 @@ while vraag12 == True:
         antwoord12 = input(":")
 
         if def12(antwoord12) == "A":
-                vraag18 = True
+                vraag17 = True
                 break
         elif def12(antwoord12) == "B":
-                vraag19 = True
+                vraag18 = True
                 break
         elif def12(antwoord12) == "C":
                 vraag12b = True
@@ -398,6 +466,7 @@ while vraag12 == True:
                 continue
 
 
+#-------------------------------------------------------------------------------------------
 #Vraag 12b /input:
 while vraag12b == True:
 
@@ -418,7 +487,130 @@ while vraag12b == True:
                 continue
 
 
+#-------------------------------------------------------------------------------------------
+#Vraag 15 /input:
+while vraag15 == True:
 
+        os.system("cls")
+        print("vraag15 werkt")
+        antwoord15 = input ("Welk ship ga je aanboord?\nA:Naar NL\nB:naar ?\n:")
+
+        if def15(antwoord15) == "A":
+                Einde1A = True
+                break
+        elif def15(antwoord15) == "B":
+                Einde1B = True
+                break
+        else:
+                continue
+
+
+#-------------------------------------------------------------------------------------------
+#Vraag 16 /input:
+while vraag16 == True:
+
+        os.system("cls")
+        print("vraag16 werkt")
+        antwoord16 = input ("Je ziet 2 groepen bij een boot wie kies je?\nA:Rode boot \nB:Grote boot\n:")
+
+        if def16(antwoord16) == "A":
+                Einde2A = True
+                break
+        elif def16(antwoord16) == "B":
+                vraag19 = True
+                break
+        else:
+                continue
+
+
+#----------------------------------------------------------------------------------------
+#Vraag 17 /input:
+while vraag17 == True:
+
+        os.system("cls")
+        print("vraag17 werkt")
+        antwoord17 = input ("Ze zien wie je bent en vragen wat waarom je niet naar het trainings kamp gaat.\nA:vertel een leugen\nB:Vertel de waarheid\n:")
+
+        if def17(antwoord17) == "A":
+                vraag20 = True
+                break
+        elif def17(antwoord17) == "B":
+                vraag21 = True
+                break
+        else:
+                continue
+
+
+#----------------------------------------------------------------------------------------
+#Vraag 18 /input:
+while vraag18 == True:
+
+        os.system("cls")
+        print("vraag18 werkt")
+        antwoord18 = input ("Hoe er dan langs\nA:Met een vrachtwagen mee\nB:Verderop over het hek\n:")
+
+        if def18(antwoord18) == "A":
+                Einde4A = True
+                break
+        elif def18(antwoord18) == "B":
+                Einde4B = True
+                break
+        else:
+                continue
+
+
+#----------------------------------------------------------------------------------------
+#Vraag 19 /input:
+while vraag19 == True:
+
+        os.system("cls")
+        print("vraag19 werkt")
+        antwoord19 = input ("Het blijkt politie te zijn ze komen, wat nu\nA:Rennen\nB:doe alsof je verdwaald bent\n:")
+
+        if def19(antwoord19) == "A":
+                Einde2B = True
+                break
+        elif def19(antwoord19) == "B":
+                Einde2A = True
+                break
+        else:
+                continue
+
+
+#----------------------------------------------------------------------------------------
+#Vraag 20 /input:
+while vraag20 == True:
+
+        os.system("cls")
+        print("vraag20 werkt")
+        antwoord20 = input ("Welk leugen vertel je\nA:'Ik ben uitgezonden naar het buitenland\nB:'Ik weet van niks'\n:")
+
+        if def20(antwoord20) == "A":
+                Einde5A = True
+                break
+        elif def20(antwoord20) == "B":
+                Einde5B = True
+                break
+        else:
+                continue
+
+
+#----------------------------------------------------------------------------------------
+#Vraag 21 /input:
+while vraag21 == True:
+
+        os.system("cls")
+        print("vraag21 werkt")
+        antwoord21 = input ("Je besluit de waatheid te vertellen ze proberen je aan te houden wat nu?\nA:Rennen\nB:Geef op\n:")
+
+        if def21(antwoord21) == "A":
+                Einde6A = True
+                break
+        elif def21(antwoord21) == "B":
+                Einde6B = True
+                break
+        else:
+                continue
 print("........................")
         
 
