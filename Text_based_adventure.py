@@ -112,19 +112,6 @@ def def5(antwoord):
                 return "C"
 
 
-#defenitie vraag5i5
-def def5i5(antwoord):
-        if antwoord.lower() == "a":
-                print("A5i5 werkt")
-                return "A"
-        elif antwoord.lower() == "b":
-                print("B5i5 werkt")
-                return "B"
-        else:
-                print("fout5i5 werkt")
-                return "C"
-
-
 #defenitie vraag6
 def def6(antwoord):
         if antwoord.lower() == "a":
@@ -207,6 +194,19 @@ def def12(antwoord):
                 return "D"
 
 
+#defenitie vraag12b
+def def12b(antwoord):
+        if antwoord.lower() == "a":
+                print("A12b werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B12b werkt")
+                return "B"
+        else:
+                print("fout12b werkt")
+                return "D"
+
+
 #defenitie vraag13
 def def13(antwoord):
         if antwoord.lower() == "a":
@@ -217,6 +217,110 @@ def def13(antwoord):
                 return "B"
         else:
                 print("fout13 werkt")
+                return "D"
+
+
+#defenitie vraag14
+def def14(antwoord):
+        if antwoord.lower() == "a":
+                print("A14 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B14 werkt")
+                return "B"
+        else:
+                print("fout14 werkt")
+                return "D"
+
+
+#defenitie vraag15
+def def15(antwoord):
+        if antwoord.lower() == "a":
+                print("A15 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B15 werkt")
+                return "B"
+        else:
+                print("fout15 werkt")
+                return "D"
+
+
+#defenitie vraag16
+def def16(antwoord):
+        if antwoord.lower() == "a":
+                print("A16 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B16 werkt")
+                return "B"
+        else:
+                print("fout16 werkt")
+                return "D"
+
+
+#defenitie vraag17
+def def17(antwoord):
+        if antwoord.lower() == "a":
+                print("A17 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B17 werkt")
+                return "B"
+        else:
+                print("fout17 werkt")
+                return "D"
+
+
+#defenitie vraag18
+def def18(antwoord):
+        if antwoord.lower() == "a":
+                print("A18 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B18 werkt")
+                return "B"
+        else:
+                print("fout18 werkt")
+                return "D"
+
+
+#defenitie vraag19
+def def19(antwoord):
+        if antwoord.lower() == "a":
+                print("A19 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B19 werkt")
+                return "B"
+        else:
+                print("fout19 werkt")
+                return "D"
+
+
+#defenitie vraag20
+def def20(antwoord):
+        if antwoord.lower() == "a":
+                print("A20 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B20 werkt")
+                return "B"
+        else:
+                print("fout20 werkt")
+                return "D"
+
+
+#defenitie vraag21
+def def21(antwoord):
+        if antwoord.lower() == "a":
+                print("A21 werkt")
+                return "A"
+        elif antwoord.lower() == "b":
+                print("B21 werkt")
+                return "B"
+        else:
+                print("fout21 werkt")
                 return "D"
 #-------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------
@@ -311,7 +415,7 @@ while vraag9 == True:
         os.system("cls")
         print("vraag9 werkt")
         print("Je pakt je paspoort en gaat snel weg\n")
-        vraag5i5 = True
+        vraag5 = True
         break
 
 
@@ -322,7 +426,7 @@ while vraag10 == True:
         os.system("cls")
         print("vraag10 werkt")
         print("Je gaat naar je vriend +Tip voor haven")
-        vraag5i5 = True
+        vraag5 = True
         break
 
 
@@ -385,7 +489,7 @@ while vraag13 == True:
 
         os.system("cls")
         print("vraag13 werkt")
-        antwoord8 = input ("Je waarscuwd de man mee naar verzet helpen met verzet\nA:Ja\nB:Nee\n:")
+        antwoord13 = input ("Je waarscuwd de man mee naar verzet helpen met verzet\nA:Ja\nB:Nee\n:")
 
         if def13(antwoord13) == "A":
                 Einde3A = True
@@ -403,7 +507,7 @@ while vraag14 == True:
 
         os.system("cls")
         print("vraag14 werkt")
-        antwoord8 = input ("Je loopt snel door en besluit toch de bus te nemen\nA:haven\nB:grens\n:")
+        antwoord14 = input ("Je loopt snel door en besluit toch de bus te nemen\nA:haven\nB:grens\n:")
 
         if def14(antwoord14) == "A":
                 vraag11 = True
@@ -421,18 +525,21 @@ while vraag11 == True:
 
         os.system("cls")
         print("vraag11 werkt")
-        print("je komt aan op de haven\nA:Stiekem mee boot\nB: verder naar grens")
+        print("je komt aan op de haven wat nu?")    
         if vraag10 == True:
-                print("C:Naaar man van de Tip 'vraag10'")
-        antwoord11 = input 
-
-        if def11(antwoord11) == "A":
+                print("A:Naar man van de Tip vraag10")      
+        else:
+                print("B:Stiekem mee boot")
+        print("C:Verder naar grens")
+                
+        antwoord11 = input(":")
+        if def11(antwoord11) == "B":
                 vraag15 = True
                 break
-        elif def11(antwoord11) == "B":
+        elif def11(antwoord11) == "C":
                 vraag12 = True
                 break
-        elif def11(antwoord11) == "C":
+        elif def11(antwoord11) == "A":
                 vraag16 = True
                 break
         else:
