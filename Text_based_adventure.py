@@ -784,16 +784,34 @@ while gamerunning == True:
                 input("-ENTER")      
 
         if Einde3B = True:
-                print("Je besloot dat een verzet niks voor jouw was, je wou juist weg van de elende het niet opzoeken\nmaar hier waren ze het niet mee eens, ze zijde doordat je van hun af wist ze je niet zomaar rond konde late lopen. \nZe besloten je op te sluiten in een van de legeopslag ruimtes. Je was nu het verste van vrij dan je ooit bent geweest.\nEINDE3B")
+                print("Je besloot dat een verzet niks voor jouw was, je wou juist weg van de elende het niet opzoeken\nmaar hier waren ze het niet mee eens, ze zijde doordat je van hun af wist ze je niet zomaar rond konde late lopen. \nZe besloten je op te sluiten in een van de legeopslag ruimtes. Je was nu het verste van vrij dan je ooit bent geweest.\nEINDE 3B")
                 input("-ENTER")
 
 
         if Einde4A = True:
-                print("")
+                print("Je besluit opzoek te gaan naar een vrachtwagen om je over de grens heen te krijgen gelukkig is er niet ver van je vandaan een rust punt voor vrachtwagens.\nJe loopt op een van de vrachtwagen af en... hij is open! je kijk om je heen en springt er snel in.\nNa wat voelt als eeuwen voel je te vrachtwagen rijden, je maakt je zo klein mogelijk achter wat pellets en hoopt.\nDe wagen stopt even het is stil. Niet veel later voel je hem weer doorrijden je bent langs de grens!\nEINDE 4A")
                 input("-ENTER")
 
         if Einde4B = True:
-                print("")
+                print("Je besluit mogelijk verder van de douane een plek te vinden waar je er veilig langs kan.\nNa een tijdje lopen langs een rivier kom je plots een bootje tegen! Je kijk om je heen, maar er is niemand te zien zo ver je kijkt.\n Je stapt het bootje in en vaart naar de overkant als je aankomt is het stil... er is niemand je bent veilig.\nEINDE 4B")
+                input("-ENTER")
+
+
+        if Einde5A = True:
+                print("Je verteld de man dat je bent afgekeurt, de man kijkt je wat raar aan en doet dan wat op op zijn PC.\nVoor dat je iets kan doen hoor je de sirenes af gaan en staan er meerdere soldate om je heen.\nJe word mee genomen naar het bureau waar ze er achter komen wie je bent en waarom je weg zou willen. De volgende ochten word je meegenomen naar de gevangenis net buiten de stad.\nEINDE 5A")
+                input("-ENTER")
+
+        if Einde5B = True:
+                print("Je verteld de man dat je van niks wist en dat je gewoon op vakantie ging. De man kijkt je bedenkend aan...\nHij haalt zijn schouders op en zegt dat het vast wel goed is, je loopt door. Dit had nooit kunnen werken\nEINDE 5B")
+                input("-ENTER")
+
+
+        if Einde6A = True:
+                print("Je besluit je laatste uurtje nog even in je bed te blijven, even genieten van de rust.\nDeze rust duurde niet lang voordat je mensen aan je deur. Je kleed je snel aan en pakt je spullen, je loopt naar beneden en gaat mee met de mannen.\nDit was het laatste moment van de soort vijheid die je had\nEINDE 6A")
+                input("-ENTER")
+
+        if Einde6B = True:
+                print("Je gaat zitten, je weet niet wat je meer zou moeten doen dan zitten en wachten... je laatste momenten van vrijheid, maar zo voelt het niet het voelt alsof je j elaatste beetje vrijheid al kwijt bent.\nDE mannen staat aan de deur, je pakt je spullen en gaat mee\nEINDE 6B")
                 input("-ENTER")
 #----------------------------------------------------------------------------------------
         print("........................")
