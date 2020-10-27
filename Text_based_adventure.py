@@ -382,10 +382,12 @@ while gamerunning == True:
                 if def3(antwoord3) == "A":
                         vraag4 = True
                         landKeuze = ("als je naar een van de buurlanden wil dan zou je...\nJA dan zou je over de grens moeten")
+                        route = "de grens"
                         break
                 elif def3(antwoord3) == "B":
                         vraag4 = True
                         landKeuze = ("als je naar Europa wil dan zou je...\n met een boot moeten dus.. de haven!")
+                        route = "de haven"
                         break
                 else:
                         continue
@@ -415,8 +417,9 @@ while gamerunning == True:
         while vraag6 == True:
 
                 os.system("cls")
-                print("vraag6 werkt")
-                antwoord6 = input ("Je gaat voorbereiden wat pak je eerst?\nA:paspoort pakken\nB:afscheid vriend\n:")
+                print("Je bestuit toch nog voor te bereiden maar wat zal je doen in deze korte tijd?")
+                print("----------------------------------------------------------------")
+                antwoord6 = input ("Wat zal je nog gaan doen?\nA:Ik ga snel opzoek naar mijn paspoort.\nB:Ik neem afscheid van mijn Broer.\n:")
 
                 if def6(antwoord6) == "A":
                         vraag9 = True
@@ -433,8 +436,8 @@ while gamerunning == True:
         while vraag9 == True:
 
                 os.system("cls")
-                print("vraag9 werkt")
-                print("Je pakt je paspoort en gaat snel weg\n")
+                print("Je gaat snel opzoek naar je paspoort, maar dit duurt langer dan gedacht.")
+                print("Net op het moment datje je paspoort heb hoor je mensen aan de duer, je rent snel uit de achterduer\n")
                 vraag5 = True
                 break
 
@@ -445,7 +448,8 @@ while gamerunning == True:
 
                 os.system("cls")
                 print("vraag10 werkt")
-                print("Je gaat naar je vriend +Tip voor haven")
+                print("Als loopt naar je broers kamer waar hij zich klaar maakt om naar zijn werk te gaan.\nNa een fijn gesprek met je broer verteld hij dat hij iemand kent die vanavond mensen naar Europa smokkelt 'Hij zal bij een rood vissersbootje wachten om 10:36 uur")
+                print("Jullie nemen afscheid en je gaat op weg\n")
                 vraag5 = True
                 break
 
@@ -454,9 +458,10 @@ while gamerunning == True:
         #Vraag 5 /input:
         while vraag5 == True:
 
-                os.system("cls")
-                print("vraag5 werkt")
-                antwoord5 = input ("Hoe ga je weg\nA: Bus\nB: Rennen\n: ")
+                #os.system("cls")
+                print("Na alles ben je nu eindelijk onderweg maar wat nu, je wou naar ", route, ", maar hoe wil je daar komen?")
+                print("----------------------------------------------------------------")
+                antwoord5 = input ("Hoe wil je naar", route, " te gaan?\nA:Ik neem de bus\nB:Ik ga rennen\n: ")
 
                 if def5(antwoord5) == "A":
                         vraag7 = True
@@ -473,8 +478,8 @@ while gamerunning == True:
         while vraag7 == True:
 
                 os.system("cls")
-                print("vraag7 werkt")
-                antwoord7 = input ("Je besluit de bus te nemen waar ga je heen?\nA:De haven\nB:De grens\n:")
+                print("Je gaat opzoek naar een bushalte dit gaat natuurlijk erg makkelijk, want je hebt hier je hele legen gewoont.\nJe bus komt pas over een paar minuten, maar nu komt het moment hoe wil je hier weg?")
+                antwoord7 = input ("Wat gaat het worden?\nA:De haven\nB:De grens\n:")
 
                 if def7(antwoord7) == "A":
                         vraag11 = True
@@ -491,8 +496,9 @@ while gamerunning == True:
         while vraag8 == True:
 
                 os.system("cls")
-                print("vraag8 werkt")
-                antwoord8 = input ("Je ziet iemand grafitie maken, maar er komt politie wat doe je?\nA:Waarschuw|nB:Niks\n:")
+                print("Je besluit te rennen naar... ", route, ". Zoals verwacht kom je niet erg ver je besluit even te stoppen om op adem te komen.")
+                print("----------------------------------------------------------------")
+                antwoord8 = input ("Terwijl je op adem aan het komen bent zie je iemand iets op een muur spuiten er staat 'We want FREEDOM', maar er komen ook 2 poliete agenten aan\nWat ga je doen?\nA:Waarschuw|nB:Niks\n:")
 
                 if def8(antwoord8) == "A":
                         vraag13 = True
@@ -508,8 +514,9 @@ while gamerunning == True:
         while vraag13 == True:
 
                 os.system("cls")
-                print("vraag13 werkt")
-                antwoord13 = input ("Je waarscuwd de man mee naar verzet helpen met verzet\nA:Ja\nB:Nee\n:")
+                print("Je besluit de man te waarschuwen, het bedankt je snel en zegt dat je heb moet volgen.\nJullie rennen alweer voor wat een eeuwigheid, tot hij bij een verlaten fabriek. Als je naar binnen gaat blijken er meerdeerdere mensen te zijn!\nDe man legt uit dat ze bij een verzet horen en dat hij jouw er bij wilt hebben ")
+                print("----------------------------------------------------------------")
+                antwoord13 = input ("De vraag nu is dan alleen of je dit zou willen\nA:Ja\nB:Nee\n:")
 
                 if def13(antwoord13) == "A":
                         Einde3A = True
@@ -526,8 +533,9 @@ while gamerunning == True:
         while vraag14 == True:
 
                 os.system("cls")
-                print("vraag14 werkt")
-                antwoord14 = input ("Je loopt snel door en besluit toch de bus te nemen\nA:haven\nB:grens\n:")
+                print("Je besluit de man en de politie te ontwijken, mischien maar beter ook als jij opgepakt zou worden zou dat niet veel goeds getekenen.")
+                print("----------------------------------------------------------------")
+                antwoord14 = input ("Je neemt toch maar de bus, want het lopen had niet erg veel zin, maar waar heen?\nA:naar de haven\nB:naar de grens\n:")
 
                 if def14(antwoord14) == "A":
                         vraag11 = True
@@ -544,13 +552,14 @@ while gamerunning == True:
         while vraag11 == True:
 
                 os.system("cls")
-                print("vraag11 werkt")
-                print("je komt aan op de haven wat nu?")    
+                print("Na een rustige reiz kom je eindelijk aan bij de haven het is al laat")
+                print("Wat besluit je nu te doen?")    
+                print("----------------------------------------------------------------")
                 if vraag10 == True:
-                        print("A:Naar man van de Tip vraag10")      
+                        print("A:Ik ga opzoek naar de vriend van mijn broer.")      
                 else:
-                        print("B:Stiekem mee boot")
-                print("C:Verder naar grens")
+                        print("B:Ik ga naar de 2 grote vracht schepen.")
+                print("C:Ik ga verder naar de grens.")
                 
                 antwoord11 = input(":")
                 if def11(antwoord11) == "B":
@@ -571,13 +580,15 @@ while gamerunning == True:
         while vraag12 == True:
 
                 os.system("cls")
-                print("vraag12 werkt")
+                print("Na een langereis kom je eindelijk aan bij de grens")
                 print("Wat ga je doen bij de grens")
+                print("----------------------------------------------------------------")
                 if vraag9 == True:
-                        print("A:probeer over de grens te gaan.")
+                        print("A:Ik ga langs de douane.")
                 else:
-                        print("B:Je hebt geen paspoort stiekem langs")
-                print("C:Verder naar de haven")
+                        print("Je komt er op dat moment net achter dat je je paspoort bent vergeten..."
+                        print("B:ik ga stiekem langs de douane glippen")
+                print("C:Ik ga toch verder naar de haven")
                 antwoord12 = input(":")
 
                 if def12(antwoord12) == "A":
@@ -598,12 +609,13 @@ while gamerunning == True:
         while vraag12b == True:
 
                 os.system("cls")
-                print("vraag12b werkt")
-                print("je komt aan op de haven\nA:Stiekem mee met vracht schip")
+                print("Na een rustige reiz kom je eindelijk aan bij de haven het is al laat")
+                print("Wat besluit je nu te doen?")    
+                print("----------------------------------------------------------------")
+                print("je komt aan op de haven\nA:Ik ga naar de 2 grote vracht schepen.")
                 if vraag10 == True:
-                        print("B:Naar man van de Tip 'vraag10'")
-                antwoord11 = input
-
+                        print("B:Ik ga opzoek naar de vriend van mijn broer")
+                antwoord11 = input(":")
                 if def12b(antwoord12b) == "A":
                         vraag15 = True
                         break
@@ -619,9 +631,9 @@ while gamerunning == True:
         while vraag15 == True:
 
                 os.system("cls")
-                print("vraag15 werkt")
-                antwoord15 = input ("Welk ship ga je aanboord?\nA:Naar NL\nB:naar ?\n:")
-
+                print("Als je aankomt bij de 2 scheppen zie je dat ze toevallig beide worden ingeladen\nEen van de schepen gaat naar Nederladn en de ander naar Engeland")
+                print("----------------------------------------------------------------")
+                antwoord15 = input ("Je zou makkelijk aan boord kunnen klimmen, maar bij welke?\nA:De boot naar Nederland\nB:de boot naar Engeland\n:")
                 if def15(antwoord15) == "A":
                         Einde1A = True
                         break
@@ -637,8 +649,10 @@ while gamerunning == True:
         while vraag16 == True:
 
                 os.system("cls")
-                print("vraag16 werkt")
-                antwoord16 = input ("Je ziet 2 groepen bij een boot wie kies je?\nA:Rode boot \nB:Grote boot\n:")
+                print("Na even rond zoeken kom je 2 groepen mensen tegen voor 2 verschillende boten, maar welke was het?")
+                print("De ene boot was een Rode sloop en de andere was een vissersbootje.")
+                print("----------------------------------------------------------------")
+                antwoord16 = input ("Naar welk van de 2 ga je?\nA:Het vissersbootje\nB:De rode sloop\n:")
 
                 if def16(antwoord16) == "A":
                         Einde2A = True
@@ -655,8 +669,9 @@ while gamerunning == True:
         while vraag17 == True:
 
                 os.system("cls")
-                print("vraag17 werkt")
-                antwoord17 = input ("Ze zien wie je bent en vragen wat waarom je niet naar het trainings kamp gaat.\nA:vertel een leugen\nB:Vertel de waarheid\n:")
+                print("Je stapt in de lijn voor de douane alles gaat prima, maar dan ben jij aan de buurt.\n De man die achter de balie zit checkt iets op zijn PC en vraagt waarom jij niet in het trainings kamp bent.")
+                print("----------------------------------------------------------------")
+                antwoord17 = input ("Ze zien wie je bent en vragen wat waarom je niet naar het trainings kamp gaat.\nA:Ik vertel een leugen\nB:REN!\n:")
 
                 if def17(antwoord17) == "A":
                         vraag20 = True
@@ -673,8 +688,9 @@ while gamerunning == True:
         while vraag18 == True:
 
                 os.system("cls")
-                print("vraag18 werkt")
-                antwoord18 = input ("Hoe er dan langs\nA:Met een vrachtwagen mee\nB:Verderop over het hek\n:")
+                print("Je besluit toch over de grens te gaan, maar dan zonder paspoort.\nHet enige probleem is dat ze je er nooit zo langs laten.")
+                print("----------------------------------------------------------------")
+                antwoord18 = input ("Hoe zou je er dan langs kommen?\nA:Ik glip met een vrachtwagen mee\nB:Ik probeer er verderop langs te kommen\n:")
 
                 if def18(antwoord18) == "A":
                         Einde4A = True
@@ -691,8 +707,9 @@ while gamerunning == True:
         while vraag19 == True:
 
                 os.system("cls")
-                print("vraag19 werkt")
-                antwoord19 = input ("Het blijkt politie te zijn ze komen, wat nu\nA:Rennen\nB:doe alsof je verdwaald bent\n:")
+                print("Als je naar de groep mannen af loopt wordde ze duidelijker zichtbaar, het blijken politie te zijn")
+                print("----------------------------------------------------------------")
+                antwoord19 = input ("wat nu?\nA:Rennen\nB:doe alsof je verdwaald bent\n:")
 
                 if def19(antwoord19) == "A":
                         Einde2B = True
@@ -709,8 +726,9 @@ while gamerunning == True:
         while vraag20 == True:
 
                 os.system("cls")
-                print("vraag20 werkt")
-                antwoord20 = input ("Welk leugen vertel je\nA:'Ik ben uitgezonden naar het buitenland\nB:'Ik weet van niks'\n:")
+                print("Je besluit een leugen te vertellen, maar welk leugen? Je zou snel iets moeten bedenken...")
+                print("----------------------------------------------------------------")
+                antwoord20 = input ("Welk leugen vertel je\nA:'Ik ben afgekeurd'\nB:'Ik weet van niks'\n:")
 
                 if def20(antwoord20) == "A":
                         Einde5A = True
@@ -727,8 +745,9 @@ while gamerunning == True:
         while vraag21 == True:
 
                 os.system("cls")
-                print("vraag21 werkt")
-                antwoord21 = input ("Je besluit de waatheid te vertellen ze proberen je aan te houden wat nu?\nA:Rennen\nB:Geef op\n:")
+                print("Je besloot te rennen zo hard als je kon! Dit, zoals verwacht bracht je niet ver en voor je het wist was je omsingeld")
+                print("----------------------------------------------------------------")
+                antwoord21 = input ("Wat nu...\nA:door rennen\nB:Geef op\n:")
 
                 if def21(antwoord21) == "A":
                         Einde6A = True
@@ -740,6 +759,42 @@ while gamerunning == True:
                         continue
 
 
+#----------------------------------------------------------------------------------------
+        if Einde1A = True:
+                print("Je glipt met gemak het schip binnen, waar je je snel verbergt achter wat kratten. Alles gaat bijna perfect tijdens de reis, naast dat het niet erg confortalbel zat.\nEn na een verschrikkelijk lange tocht hoorde je dat je in Nederland aan gekomen was!\nJe glipt het schip weer af waar je nu in een onbekende stad staat in een onbekend land. Het gaat lastig worden hier iets beginnen zonder papier werk, maar dat zal uiteindelijk wel lukken\nEINDE 1A")
+                input("-ENTER")
+
+        if Einde1B = True:
+                print("Je glipt met gemak het schip binnen, waar je je snel verbergt in een kapotte krat.\nDe reiz gaat prima tot je plots een zaklamp in je ogen krijgt!\nTerwijl je niet aan het oplette was is er een inspectie gekomen om alles te onderzoeken.\n Je word mee genomen door de inspectie naar Griekeland, waar na een ondervraging je word opgevangen in een vluchtelingen kamp.\nEINDE 1B
+                input("-ENTER")
+
+        if
+        if Einde2A = True:
+                print("Je loopt of het vissersbootje af als je dichter bij komt zie je dat het inderdaad een rode boot is.\nAls je aan komt lopen stapt er een man naar voren en vraagt wat je komt doen? Na het uitleggen en vertellen dat je broer je stuurde kon je mee.\nJe stapt in het bootje met vele andere het wordt een verschrikkelijke tocht, maar zeker waardt om dit land uit te komen\nEINDE 2A")
+                input("-ENTER")
+
+        
+        if Einde2B = True:
+                print("Voor dat je iets kan doen of zeggen gooit iemand je van achter op de grond. Je word meegenomen voor 'verdacht gedrag'\nop het bureau word ontdekt wie je bent en dat je die dag opgehaald zou worden voor het leger.\nZoals je al vreezde werd je de volgende ochtend mee genomen naar een gevangenis net buiten de stad...\nEinde 2B")
+                input("-ENTER")
+
+
+        if Einde3A = True:
+                print("Je besluit je aan te sluiten bij het verzet, je was klaar met de regering en je hebt eindelijk een mogelijk heid om terug te vechten!/nHet aanpassen aan je nieuwe omstandigheid was lastig, maar dit was het je waardt om een verandering te makken voor je land\nEINDE3A")
+                input("-ENTER")      
+
+        if Einde3B = True:
+                print("Je besloot dat een verzet niks voor jouw was, je wou juist weg van de elende het niet opzoeken\nmaar hier waren ze het niet mee eens, ze zijde doordat je van hun af wist ze je niet zomaar rond konde late lopen. \nZe besloten je op te sluiten in een van de legeopslag ruimtes. Je was nu het verste van vrij dan je ooit bent geweest.\nEINDE3B")
+                input("-ENTER")
+
+
+        if Einde4A = True:
+                print("")
+                input("-ENTER")
+
+        if Einde4B = True:
+                print("")
+                input("-ENTER")
 #----------------------------------------------------------------------------------------
         print("........................")
         os.system("cls")
